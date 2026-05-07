@@ -64,6 +64,14 @@ export function VenmoIcon(props: IconProps) {
   );
 }
 
+export function ZelleIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M13.5 1.5h-3v2.07h-3.4v3.13h3.4V8.6L4.6 16.27v3.43h2.5v2.8h3v-2.8h3.4v-3.14h-3.4v-1.84l5.9-7.66V3.63h-2.5V1.5Zm0 16.06v.45H10.4v-.45h3.1Z" />
+    </svg>
+  );
+}
+
 export function KravokIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>

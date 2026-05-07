@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JT Ray — Connect",
+  title: "J. Tyler Ray",
   description: "Founder, builder. Calendar, contacts, payments — all in one place.",
   openGraph: {
-    title: "JT Ray — Connect",
+    title: "J. Tyler Ray",
     description: "All my links in one place.",
     type: "profile",
   },

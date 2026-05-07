@@ -2,25 +2,20 @@
 
 import * as Dialog from "@radix-ui/react-dialog";
 import { AnimatePresence, motion } from "motion/react";
-import { Sparkles, X } from "lucide-react";
+import { X } from "lucide-react";
+import type { ReactNode } from "react";
 import { useState } from "react";
-import { LinkButton } from "./link-button";
 
-export function OnlyFansDialog() {
+type Props = {
+  trigger: ReactNode;
+};
+
+export function OnlyFansDialog({ trigger }: Props) {
   const [open, setOpen] = useState(false);
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <Dialog.Trigger asChild>
-        <div>
-          <LinkButton
-            label="My OnlyFans"
-            hint="exclusive content 🔞"
-            icon={<Sparkles className="h-4.5 w-4.5" />}
-            onClick={() => setOpen(true)}
-          />
-        </div>
-      </Dialog.Trigger>
+      <Dialog.Trigger asChild>{trigger}</Dialog.Trigger>
 
       <AnimatePresence>
         {open ? (
