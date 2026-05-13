@@ -7,7 +7,6 @@ import {
   Globe,
   Mail,
   MessageCircle,
-  Rocket,
   Sparkles,
   Users,
   Wallet,
@@ -18,7 +17,6 @@ import {
   CashAppIcon,
   FacebookIcon,
   InstagramIcon,
-  KravokIcon,
   LinkedInIcon,
   PayPalIcon,
   VenmoIcon,
@@ -179,32 +177,6 @@ function IndexView({ onSelect }: { onSelect: (v: View) => void }) {
       exit="exit"
       className="space-y-3 pt-3"
     >
-      {/* Featured kravok pill */}
-      <motion.a
-        variants={tileItem}
-        href="https://kravok.ai"
-        target="_blank"
-        rel="noreferrer noopener"
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.98 }}
-        className="btn-shine group relative flex w-full items-center gap-3 overflow-hidden rounded-2xl border border-[#d4af37]/35 bg-gradient-to-r from-[#1a1408] via-[#15100a] to-[#0a0805] px-3.5 py-3 transition-colors hover:border-[#d4af37]/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37]/60"
-      >
-        <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#d4af37]/40 bg-[#050505] text-[#f5d76e] transition group-hover:scale-110">
-          <KravokIcon className="h-4 w-4" />
-        </span>
-        <span className="flex flex-1 flex-col">
-          <span className="text-[14px] font-semibold tracking-[0.18em] text-[#f5e7b8] group-hover:text-white">
-            KRAVOK
-          </span>
-          <span className="text-[11px] tracking-wide text-[#d4af37]/70 group-hover:text-[#f5d76e]/90">
-            The AI copilot that closes with you
-          </span>
-        </span>
-        <span className="flex items-center gap-1 rounded-full border border-[#d4af37]/45 bg-[#1a1408] px-2 py-0.5 text-[9.5px] font-bold uppercase tracking-[0.18em] text-[#f5d76e]">
-          <Rocket className="h-2.5 w-2.5" /> live
-        </span>
-      </motion.a>
-
       {/* Bento 2x2 */}
       <motion.div variants={tileItem} className="grid grid-cols-2 gap-2.5">
         <CategoryTile

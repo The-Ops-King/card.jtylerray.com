@@ -71,11 +71,3 @@ export function ZelleIcon(props: IconProps) {
     </svg>
   );
 }
-
-export function KravokIcon(props: IconProps) {
-  return (
-    <svg {...base} {...props}>
-      <path d="M3 3h2.5v8.4L11.6 3H15l-6.7 9 7 12H11.5l-5.5-9.4-1 1.4V21H3V3Zm14 6.5 4 11.5h-2.4l-.8-2.4h-3.6l-.8 2.4H11l4-11.5h2Zm-1 2.6-1.2 4h2.4l-1.2-4Z" />
-    </svg>
-  );
-}
